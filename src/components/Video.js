@@ -1,9 +1,24 @@
-function Video() {
-    let topic = 'Learn React 2023'
+import './Video.css'
+
+function Video({ title, channel, views, time, verified }) {
   return (
     <>
-      <div style={{backgroundColor:'red'}} >{topic}</div>
-      <img src="./images/apple1.jpg" alt="Apple" />
+      <div className="container">
+        <img src="https://picsum.photos/id/237/200/300" alt="Apple" />
+        <div className="title">{title}</div>
+        {/* {verified ? (
+          <div className="channel">{channel} ✅</div>
+        ) : (
+          <div className="channel">{channel} </div>
+        )} */}
+        <div className="channel">
+          {/* {channel} {verified ? '✅' : null} */}
+          {channel} {verified && '✅'}
+        </div>
+        <div className="views">
+          {views} <span> . </span> {time}
+        </div>
+      </div>
     </>
   )
 }

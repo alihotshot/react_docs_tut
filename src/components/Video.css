@@ -1,0 +1,22 @@
+.container {
+  width: 15em;
+  margin: 0 0.5em;
+  float: left;
+}
+
+.container img {
+  width: 100%;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 0.75em;
+  color: white;
+}
+
+.channel,
+.views {
+  font-size: small;
+  color: beige;
+  margin-top: 0.5em;
+}
