@@ -1,25 +1,8 @@
 import './App.css'
 import Video from './Video'
+import videos from '../data/data'
 
 function App() {
-  let channelName = 'Verge Future'
-  //Object
-  let videos = [
-    {
-      title: 'React JS Tutorials',
-      views: '100K',
-      time: '1 Year ago',
-      channel: channelName,
-      verified: true,
-    },
-    {
-      title: 'Node JS Tutorials',
-      views: '1M',
-      time: '3 Year ago',
-      channel: 'Verge Future',
-      verified: true,
-    },
-  ]
   return (
     <div className="App">
       <h1>YouTube Videos</h1>
@@ -27,6 +10,8 @@ function App() {
       {/* <Video {...obj} /> */}
       {videos.map((video) => (
         <Video
+          key={video.id}
+          id={video.id}
           title={video.title}
           channel={video.channel}
           views={video.views}

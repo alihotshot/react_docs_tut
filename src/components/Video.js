@@ -1,10 +1,10 @@
 import './Video.css'
 
-function Video({ title, channel, views, time, verified }) {
+function Video({ id, title, channel, views, time, verified }) {
   return (
     <>
       <div className="container">
-        <img src="https://picsum.photos/id/180/200/300" alt="Apple" />
+        <img src={`https://picsum.photos/id/${id}/200/300`} alt="Apple" />
         <div className="title">{title}</div>
         {/* {verified ? (
           <div className="channel">{channel} ✅</div>
