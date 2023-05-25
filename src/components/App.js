@@ -1,6 +1,7 @@
 import './App.css'
 import Video from './Video'
 import videos from '../data/data'
+import PlayButton from './PlayButton'
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           verified={video.verified}
         />
       ))}
+      <div className="playbutton" style={{ clear: 'both' }}>
+        <PlayButton message="Play-Button">Play</PlayButton>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,14 @@
+.playbutton button {
+  cursor: pointer;
+  background-color: white;
+  font-size: medium;
+  padding: 0.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
