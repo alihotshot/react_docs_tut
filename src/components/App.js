@@ -22,6 +22,7 @@ function App() {
       ))}
       <div className="playbutton" style={{ clear: 'both' }}>
         <PlayButton message="Play-Button">Play</PlayButton>
+        <PlayButton message="Pause">Pause</PlayButton>
       </div>
     </div>
   )
