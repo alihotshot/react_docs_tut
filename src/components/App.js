@@ -21,8 +21,12 @@ function App() {
         />
       ))}
       <div className="playbutton" style={{ clear: 'both' }}>
-        <PlayButton message="Play-Button">Play</PlayButton>
-        <PlayButton message="Pause">Pause</PlayButton>
+        <PlayButton
+          onPlay={() => console.log('Play')}
+          onPause={() => console.log('Pause')}
+        >
+          Play
+        </PlayButton>
       </div>
     </div>
   )
